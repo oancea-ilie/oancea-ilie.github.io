@@ -3,7 +3,6 @@ let nav = document.querySelector('nav');
 let navToggle = document.querySelector('.toggle-nav');
 let closeBtn = document.querySelector(".close-btn");
 
-
 let ok = 0;
 
 checkSize=()=>{
@@ -81,3 +80,13 @@ window.addEventListener('scroll',()=>{
     }
 
 });
+
+// Type animation
+new TypeIt(".type-1", {
+    startDelay: 1000,
+    strings: ["I'm Oancea Ilie","A Web Developer"],
+    speed: 100,
+    loop: true,
+    breakLines: false,
+    nextStringDelay: 2000
+}).go();
