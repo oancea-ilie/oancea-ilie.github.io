@@ -1,0 +1,25 @@
+
+.toggle-nav{
+    z-index: 2;
+    margin-top: 55px;
+    background-color: $dark;
+    @include flex($disp:flex,$dir:column,$just:center ,$all:center);
+    position: fixed;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    a{
+        color: white;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: .3s all;
+    }
+    .active{
+        color: $primary;
+    }
+    a:hover{
+        color: $primary;
+    }
+}

@@ -1,0 +1,13 @@
+.resume{
+    @extend %side;
+
+    @include mq('md'){
+        margin: 0 1.5rem;
+    }
+
+    @include mq('lg'){
+        padding: 0 2rem;
+        max-width: 1365px;
+        margin: auto;
+    }
+}

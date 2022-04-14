@@ -1,0 +1,19 @@
+.resume-col{
+       h3{
+           text-align: center;
+           font-size: 2rem;
+           margin-bottom: 2rem;
+       }
+       .exp{
+           margin-top: 0.5rem;
+           margin-bottom: 2rem;
+       }
+
+       @include mq('md'){
+        .exp{
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+    }
+}

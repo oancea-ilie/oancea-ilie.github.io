@@ -1,0 +1,16 @@
+.what{
+    padding-top: 0.2rem;
+    background-color: $page;
+    margin-bottom: 3rem;
+
+    @include mq('sm'){
+        margin: 0 1rem 3rem 1rem;
+    }
+    @include mq('md'){
+        margin: 0 1.5rem 3rem 1.5rem;
+    }
+    @include mq('lg'){
+        max-width: 1300px;
+        margin: 0 auto 3rem auto;
+    }
+}

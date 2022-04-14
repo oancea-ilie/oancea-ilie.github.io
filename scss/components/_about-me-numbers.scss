@@ -1,0 +1,17 @@
+.about-me-numbers{
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    grid-column-gap: 0;
+    padding: 0 1.5rem;
+    justify-items: center;
+    @include mq('md'){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 4rem;
+    }
+    @include mq('lg'){
+        padding: 0 1.5rem;
+        margin-bottom: 6rem;
+    }
+}

@@ -1,0 +1,40 @@
+.contact-data{
+
+    grid-area: data;
+
+    @include flex($disp:flex,$dir:column,$just:null ,$all:center);
+
+    h3{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    p{
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 0.7rem;
+    }
+    .follow{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+
+    @include mq('md'){
+
+        margin-left: 1.5rem;
+        display: inline-block;
+        h3{
+            text-align: start;
+            margin-bottom: 3rem;
+        }
+        p{
+            text-align: start;
+        }
+    }
+    @include mq('lg'){
+        padding-right: 1rem;
+    }
+}

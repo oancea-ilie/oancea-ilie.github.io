@@ -1,0 +1,15 @@
+.skill-element{
+
+    .skill-line{
+        height: 10px;
+        width: 100%;
+        border-radius: 20px;
+        background-color: $grey;
+        margin: 1rem 0;
+    }
+    .skill-line-color{
+        border-radius: 20px;
+        height: 10px;
+        background-color: $primary;
+    }
+}

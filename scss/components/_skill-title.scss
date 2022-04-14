@@ -1,0 +1,12 @@
+.skill-title{
+    @include flex($disp:flex,$dir:null,$just:space-between ,$all:null);
+        p{
+            font-size: 1.2rem;
+        }
+
+        @include mq('md'){
+            p{
+                font-size: 1.3rem;
+            }
+        }
+}

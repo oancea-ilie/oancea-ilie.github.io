@@ -1,0 +1,20 @@
+footer{
+    height: 130px;
+    background-color: $dark;
+    @include flex($disp:flex,$dir:column,$just:center ,$all:center);
+
+    grid-area: footer;
+    p{
+        text-align: center;
+        font-size: 1rem;
+        color: white;
+
+        a{
+            color: $primary;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $hover;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@mixin  mq($break) {
+
+    $value:map-get($breakpoints,$break);
+
+
+    $sm:map-get($breakpoints, 'sm' );
+
+
+    @if($value==null){
+
+        @error " #{$break}  is not valid nbreakpoint"; 
+    }
+
+    @else if $value<$sm{
+        @media(max-width:$value){
+
+            @content;
+        }
+    }
+    @else{
+
+        @media(min-width:$value){
+
+            @content;
+
+        }
+    }
+    
+}
+
+@mixin flex($disp:flex,$dir:null,$just:null ,$all:null) {
+    display: $disp;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $all;
+}
+
+%side{
+    padding: 0 1rem;
+}
+
+%par{
+    font-weight: 400;
+    color: #414141af;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+%lgpadding{
+    @include mq('lg'){
+        padding: 0 3rem ;
+    }
+}
+
+%box{
+    box-shadow: 5px 5px 15px -7px #bbbbbb;
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- alt link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Glozzom</title>
+</head>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                  BODY                                   -->
+<!-- ----------------------------------------------------------------------- -->
+
+<body>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                                   NAV                                   -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <!-- brand icon -->
+      <a href="index.html" class="navbar-brand">Glozzom</a>
+      <!-- buton nav mobile -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- legatura cu buttonul si navbar-ul -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                             SHOWCASE SLIDER                             -->
+  <!-- ----------------------------------------------------------------------- -->
+  <section id="showcase">
+    <!-- creare carusel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <!-- pentru fiecare imagine de la 0 la 3 -->
+        <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- continutul caruselului -->
+      <div class="carousel-inner">
+        <!-- carusel 1 -->
+        <div class="carousel-item carousel-image-1 active">
+          <!-- continut container -->
+          <div class="container">
+            <!-- continut carusel text -->
+            <div class="carousel-caption d-none d-sm-block text-center mb-5">
+              <!--titlu carusel -->
+              <h1 class="display-3">Best Hosting</h1>
+              <!-- paragraf carusel -->
+              <p class="lead">The best hosting on the world for the best price!</p>
+              <!-- button carusel -->
+              <a href="services.html" class="btn btn-danger btn-lg">Try now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- carusel 2 -->
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Best secure</h1>
+              <p class="lead">We invest 80% from our company profit to have the most secure servers!</p>
+              <a href="about.html" class="btn btn-danger btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- carusel 3 -->
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-center mb-5">
+              <h1 class="display-3">Best Price</h1>
+              <p class="lead">We try every day to provide ours services for the lowest price!</p>
+              <a href="services.html" class="btn btn-danger btn-lg">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- carousel controls -->
+      <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                           HOME ICONS SECTION                            -->
+  <!-- ----------------------------------------------------------------------- -->
+  <section id="home-icons" class="py-5">
+    <!-- continut -->
+    <div class="container">
+      <!-- linie -->
+      <div class="row">
+        <!-- coloana -->
+        <div class="col-md-4 text-center d-flex flex-column justify-content-center">
+          <div class="img-index pb-2">
+            <img src="https://img.icons8.com/color/96/000000/load-balancer.png" />
+          </div>
+          <!-- titlu -->
+          <h3>Hosting</h3>
+          <!-- paragraf -->
+          <p>We provide the best data hosting for all your servers.</p>
+        </div>
+        <!-- a doua coloana -->
+        <div class="col-md-4 text-center d-flex flex-column justify-content-center">
+          <div class="img-index pb-2">
+            <img src="https://img.icons8.com/officel/100/000000/data-recovery.png" />
+          </div>
+          <h3>Sending data</h3>
+          <p>Now sending data is more easy and much safer then ever with our plans!</p>
+        </div>
+        <!-- a treia coloana -->
+        <div class="col-md-4 text-center d-flex flex-column justify-content-center">
+          <div class="img-index pb-2">
+            <img src="https://img.icons8.com/bubbles/100/000000/money.png" />
+          </div>
+          <h3>Saving Money</h3>
+          <p>We provide the lower price on the market and we promise we will keep it like that!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                          HOME HEADING SECTION                           -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <section id="home-heading" class="p-5">
+    <!-- cuprinzator pentru overlay -->
+    <div class="dark-overlay">
+      <!-- linie -->
+      <div class="row">
+        <!-- coloana -->
+        <div class="col">
+          <!-- continut text -->
+          <div class="container pt-5">
+            <!-- titlu -->
+            <h1>Are You Ready To Get Started?</h1>
+            <!-- paragraf -->
+            <p class="d-none d-md-block">Start now and you will get free acces to our all plans with a <span
+                class="text-danger">10%</span> discount for
+              your first inregistration!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              INFO SECTION                               -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <section id="info" class="py-3">
+    <!-- continut total -->
+    <div class="container">
+      <!-- linie -->
+      <div class="row">
+        <!-- coloana -->
+        <div class="col-md-6 align-self-center">
+          <!-- titlu -->
+          <h3>Choose your perfect plan</h3>
+          <!-- paragraf -->
+          <p>Choose now your perfect plan and make your web site online right now!</p>
+          <!-- buton  -->
+          <a href="services.html" class="btn btn-outline-danger btn-lg">Try now</a>
+        </div>
+        <!-- coloana imagine -->
+        <div class="col-md-6">
+          <!-- imagine fluida -->
+          <img src="img/laptop.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                        Video Play  intr-un modal                        -->
+  <!-- ----------------------------------------------------------------------- -->
+  <section id="video-play">
+    <!-- cuprinzator pentru overlay -->
+    <div class="dark-overlay">
+      <!-- linie -->
+      <div class="row">
+        <!-- coloana -->
+        <div class="col">
+          <!-- cuprinzator context -->
+          <div class="container p-5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                              PHOTO GALLERY                              -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h1 class="text-center">Photo Gallery</h1>
+      <p class="text-center pb-3">Check out our clients website we host!</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <img src="img/secure1.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-md-4">
+          <img src="img/secure2.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-md-4">
+          <img src="img/secure3.jpg" alt="" class="img-fluid">
+
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <img src="img/secure4.jpg" alt="" class="img-fluid">
+
+        </div>
+
+        <div class="col-md-4">
+          <img src="img/secure5.png" alt="" class="img-fluid">
+
+        </div>
+
+        <div class="col-md-4">
+          <img src="img/secure6.jpg" alt="" class="img-fluid">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                               NEWSLETTER                                -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <section id="newsletter" class="text-center p-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Sign Up For Our Newsletter</h1>
+          <p>Sign Up now and be close for all our offers and discounds every week!</p>
+          <form class="form-inline justify-content-center">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+            <button class="btn btn-danger mb-2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                                 FOOTER                                  -->
+  <!-- ----------------------------------------------------------------------- -->
+
+  <footer id="main-footer">
+    <div class="container ">
+      <p class="text-center py-5 m-0">Copyright &copy; <span id="year"></span>Glozzom </p>
+    </div>
+  </footer>
+
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <!-- alt script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // configure slider
+    $('.carousel').carousel({
+      interval: 3000,
+      pause: 'hover'
+    });
+
+
+  </script>
+</body>
+
+</html>

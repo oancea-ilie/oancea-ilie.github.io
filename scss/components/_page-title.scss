@@ -1,0 +1,39 @@
+.page-title{
+    position: relative;
+    text-align: center;
+    margin: 3rem 0;
+    h2{
+        font-size: 4rem;
+        font-weight: bold;
+        color: $grey;
+    }
+    p{
+        margin: auto;
+        color: $b;
+        font-size: 2.3rem;
+        font-weight: bold;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .separator{
+        width: 25%;
+        margin: -12px auto 0 auto;
+        border-bottom: 3px solid $primary;
+    }
+
+    @include mq('md'){
+        h2{
+            font-size: 6rem;
+        }
+        p{
+            font-size: 3rem;
+            top: 27%;
+        }
+        .separator{
+            margin: -16px auto 0 auto;
+        }
+    }
+}

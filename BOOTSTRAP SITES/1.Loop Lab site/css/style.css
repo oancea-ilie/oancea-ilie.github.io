@@ -1,0 +1,47 @@
+/* adaugare culoare de fundal pentru tot body */
+body{
+    background: rgba(51, 51, 51, 0.931);
+    color: #fff;
+}
+/* adaugare bordura la bara de navigatie si opacitate scazuta */
+.navbar{
+    border-bottom: #008ed6 3px solid;
+    opacity: 0.8;
+}
+/* adaugare imagine background */
+#home-section{
+    background: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+/* efect overlay cu negru */
+#home-section .dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background-color: rgba(0,0,0,0.6);
+}
+#home-section .home-inner{
+    padding-top: 150px;
+}
+#home-section .card-form{
+    opacity: 0.8;
+}
+#home-section .fas,
+#create-section .fas {
+    color: #008ed6;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#explore-section .fas,
+ #share-section .fas {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}

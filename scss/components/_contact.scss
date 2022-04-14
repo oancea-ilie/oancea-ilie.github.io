@@ -1,0 +1,13 @@
+.contact{
+    @extend %side;
+
+
+    margin-bottom: 3rem;
+
+
+    @include mq('lg'){
+        padding: 0 2rem;
+        max-width: 1300px;
+        margin: 0 auto 3rem auto;
+    }
+}

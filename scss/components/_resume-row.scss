@@ -1,0 +1,10 @@
+.resume-row{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include mq('md'){
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
+        align-items: center;
+    }
+}

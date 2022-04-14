@@ -1,0 +1,13 @@
+.contact-data-follow{
+    i{
+        display: inline-block;
+        font-size: 1.3rem;
+        margin:0 0.6rem;
+        color: gray;
+    }
+
+    i:hover{
+        transition: .3s all;
+        color: $primary;
+    }
+}

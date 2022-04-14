@@ -1,0 +1,8 @@
+.about-me{
+    margin-bottom: 3rem;
+
+    @include mq('lg'){
+        max-width: 1300px;
+        margin: auto;
+    }
+}

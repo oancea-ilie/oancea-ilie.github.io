@@ -1,0 +1,12 @@
+.portofolio-img-container{
+    height: auto;
+    width: 100%;
+    img{
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+    @include mq('sm'){
+        // height: 250px;
+        // max-width: 500px;
+    }
+}

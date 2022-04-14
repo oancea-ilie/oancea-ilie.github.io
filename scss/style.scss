@@ -1,0 +1,53 @@
+// utilities
+@import 
+'utilities/variables',
+
+'utilities/mixins';
+
+//base
+@import 'base/reset',
+'base/base';
+
+
+// layout
+
+@import 
+'layout/header',
+'layout/main',
+'layout/footer';
+
+// 'components'
+@import
+'components/nav',
+'components/toggle-nav',
+'components/icons',
+'components/hero',
+'components/page-title',
+'components/about-me',
+'components/about-me-row',
+'components/about-me-col',
+'components/about-me-numbers',
+'components/about-me-numbers-box',
+'components/what',
+'components/what-row',
+'components/what-col',
+'components/what-col-element',
+'components/resume',
+'components/resume-row',
+'components/resume-col',
+'components/resume-element',
+'components/resume-skills',
+'components/resume-skills-row',
+'components/resume-skills-col',
+'components/skill-element',
+'components/skill-title',
+'components/portofolio',
+'components/portofolio-row',
+'components/portofolio-element',
+'components/portofolio-img-container',
+'components/contact',
+'components/contact-data',
+'components/contact-data-icons',
+'components/contact-data-follow',
+'components/contact-form',
+'components/contact-container';

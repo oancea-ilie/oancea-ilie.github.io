@@ -1,0 +1,121 @@
+.about-me-container-col:first-child{
+    text-align: center;
+    margin-bottom: 3rem;
+    h2{
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        span{
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+
+    p{
+       @extend %par;
+    }
+    p:last-of-type{
+        margin-top: 0.7rem;
+    }
+
+    
+    @include mq('md'){
+        h2{
+            font-size:2rem;
+        }
+        span{
+            font-size:2rem;
+        }
+        p{
+            text-align: justify;
+            padding: 0 2rem;
+            font-size: 1.3rem;
+        }
+    }
+    @include mq('lg'){
+        
+        margin-right: 1.5rem;
+        h2{
+            text-align: start;
+        }
+        p{
+            padding: 0;
+        }
+    }
+
+}
+
+.about-me-container-col:last-of-type{
+    border: 1px solid $primary;
+    box-shadow: 0px 5px 4px 0px rgb(44 192 130 / 10%);
+    padding: 1.5rem;
+    border-radius: 5px;
+    p{
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        span{
+            font-weight: bold;
+        }
+        .email{
+            font-weight: normal;
+            color: $primary;
+        }
+    }
+    hr{
+        display: block;
+        margin-bottom: 0.8rem;
+        border-color: $grey;
+    }
+    a{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        display: block;
+        width: 100%;
+        background-color: $primary;
+        color: white;
+        padding: 0.5rem 0 ;
+        text-align: center;
+        border-radius: 7px;
+        text-decoration: none;
+    }
+
+    @include mq('md'){
+        width: 70%;
+        margin: auto;
+        p{
+            font-size: 1.2rem;
+        }
+        a{
+            font-size: 1.2rem;
+        }
+    }
+
+    @include mq('lg'){
+        width: 100%;
+    }
+}
+
+.about-me-container-col:last-of-type:hover{
+    transition: 0.3s all;
+    background-color: $primary;
+    color: white;
+    span{
+        color: white;
+    }
+    a{
+        background-color: white;
+        color: black;
+        i{
+            color: black;
+        }
+    }
+    a:hover{
+        background-color: $hover;
+        color: white;
+
+        i{
+            color: white;
+        }
+    }
+}

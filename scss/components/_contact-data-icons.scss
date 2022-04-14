@@ -1,0 +1,27 @@
+.contact-data-icons{
+    text-align: center;
+
+    i{
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+        color: $primary;
+    }
+
+    p{
+        padding:1rem 0;
+        font-size: 1.3rem;
+        text-align: center;
+        display: inline-block;
+    }
+    p:last-of-type{
+        padding-top: 0;
+    }
+
+    .contact-email{
+        color: $primary;
+    }
+
+    @include mq('md'){
+        text-align: start;
+    }
+}
