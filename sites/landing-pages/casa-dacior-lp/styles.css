@@ -63,7 +63,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
 }
 .menu-toggle{
     color: white;
