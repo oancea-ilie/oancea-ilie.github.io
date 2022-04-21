@@ -1,22 +1,12 @@
 'use strict';
 
 /* -------------------------------------------------------------------------- */
-/*                                 BANKIST APP                                */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                                 BANKIST APP                                */
-/* -------------------------------------------------------------------------- */
-
-
-
-
-/* -------------------------------------------------------------------------- */
 /*                                    Date de cont                            */
 /* -------------------------------------------------------------------------- */
 const account1 = {
   owner: 'Jonas Schmedtmann',
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
-  interestRate: 1.2, // %
+  interestRate: 1.2,
   pin: 1111,
 
   movementsDates: [
@@ -123,7 +113,6 @@ const formatCur = function(value, locale,currency){
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
 
-  console.log(sort);
   const movs = sort ? acc.movements.slice().sort((a, b) => a - b) : acc.movements;
 
   movs.forEach(function (mov, i) {
@@ -161,6 +150,7 @@ const calcDisplaySummary = function (acc) {
   const incomes = acc.movements
     .filter(mov => mov > 0)
     .reduce((acc, mov) => acc + mov, 0);
+
   labelSumIn.textContent = formatCur(acc.balance,acc.locale,acc.currency);
 
   const out = acc.movements
@@ -220,7 +210,7 @@ const startLogOutTimer = function(){
     
     // When 0 seconds, stop timer and log out user
     // verificam cand timpul ajunge la 0 oprim functia
-    if(time ===0){
+    if(time === 0){
       // opreste timpul
       clearInterval(timer);
       labelWelcome.textContent = "Log in to get started";

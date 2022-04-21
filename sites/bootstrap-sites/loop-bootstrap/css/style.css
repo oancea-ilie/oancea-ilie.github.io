@@ -1,14 +1,16 @@
-/* adaugare culoare de fundal pentru tot body */
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: rgba(51, 51, 51, 0.931);
     color: #fff;
 }
-/* adaugare bordura la bara de navigatie si opacitate scazuta */
+
 .navbar{
     border-bottom: #008ed6 3px solid;
     opacity: 0.8;
 }
-/* adaugare imagine background */
 #home-section{
     background: url(../img/home.jpg);
     background-repeat: no-repeat;
@@ -16,7 +18,7 @@ body{
     background-attachment: fixed;
     min-height: 700px;
 }
-/* efect overlay cu negru */
+
 #home-section .dark-overlay{
     position: absolute;
     top: 0;

@@ -38,6 +38,10 @@ nav{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
+    transition: 0.3s all;
+}
+.nav-links ul li a:hover{
+    color: #9c27b0;
 }
 .information{
     width: 1000px;
@@ -89,7 +93,7 @@ nav{
 }
 .four{
     bottom: 150px;
-    right: 350;
+    left: 400px;
     transform: rotate(-270deg);
 }
 .mobile{
@@ -108,18 +112,17 @@ nav{
     text-align: center;
 }
 .controls h3{
- 
     margin: 15px 0;
     color: white;
 }
-#upBtn{
+i{
     width: 15px;
     cursor: pointer;
+    color: white;
+    transition: 0.3s all;
 }
-#downBtn{
-    width: 15px;
-    cursor: pointer;
-    transform: rotate(180deg);
+i:hover{
+    color: #9c27b0;
 }
 .overlay{
     width: 0;
